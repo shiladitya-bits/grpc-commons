@@ -13,7 +13,7 @@ module GrpcCommons
   # Inherit this module in your RPC service class definition file => X_services_pb.rb
   # Replace `GRPC::GenericService` with `GrpcCommons::GenericService`
   # ========================
-  class GenericService
+  module GenericService
 
     def self.included klass
 
