@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'grpc/client/commons/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "grpc-client-commons"
-  spec.version       = Grpc::Client::Commons::VERSION
-  spec.authors       = ["TODO: Write your name"]
+  spec.name          = "grpc-commons"
+  spec.version       = 0.1
+  spec.authors       = ["Shiladitya Mandal"]
   spec.email         = ["16.shiladitya@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Set of tools both on gRPC client & server side"
+  spec.description   = "Set of tools both on gRPC client & server side"
+  spec.homepage      = "shiladitya-bits.github.io"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -32,4 +32,8 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
+
+  spec.add_dependency "grpc"
+  spec.add_dependency "stoplight"
+  spec.add_dependency "statsd-instrument"
 end
