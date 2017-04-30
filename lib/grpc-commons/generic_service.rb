@@ -20,6 +20,7 @@ module GrpcCommons
       klass.class_eval do
         include GRPC::GenericService
 
+        # This is an override for the same method in GRPC::GenericService
         def self.rpc_stub_class
           stub_claz = super
           instance_meths = stub_claz.instance_methods(false)
