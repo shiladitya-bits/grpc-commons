@@ -1,7 +1,6 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'grpc/client/commons/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "grpc-commons"
@@ -11,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Set of tools both on gRPC client & server side"
   spec.description   = "Set of tools both on gRPC client & server side"
-  spec.homepage      = "shiladitya-bits.github.io"
+  spec.homepage      = "https://shiladitya-bits.github.io"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
